@@ -1,0 +1,87 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
+intents:
+- greet
+- inform
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- thankyou
+- out_of_scope
+- ask_lower_stress
+- ask_eat_healthy
+- ask_exercise
+entities:
+- exercise
+- sleep
+- stress
+slots:
+  confirm_exercise:
+    type: unfeaturized
+    influence_conversation: false
+  exercise:
+    type: unfeaturized
+    influence_conversation: false
+  sleep:
+    type: unfeaturized
+    influence_conversation: false
+  diet:
+    type: unfeaturized
+    influence_conversation: false
+  stress:
+    type: unfeaturized
+    influence_conversation: false
+  goal:
+    type: unfeaturized
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: |-
+      Hi! Welcome to 1KBillionaire.
+       1KBillionaire is powered by Homewin.
+       What would you like to ask?
+  utter_goodbye:
+  - text: See you tomorrow. Bye!
+  utter_iamabot:
+  - text: I am a bot, powered by Homewin.
+  utter_ask_confirm_exercise:
+  - text: Did you play any game?!
+  utter_ask_exercise:
+  - text: What is your ticket number ?
+  utter_ask_sleep:
+  - text: What is your agent ID?
+  utter_ask_diet:
+  - text: Do you know your kiosk ID?
+  utter_ask_stress:
+  - text: Is your stress level low, medium, or high 🧘 ?
+  utter_ask_goal:
+  - text: Setting goals - even small ones - is a great way to focus your day. What do you want to accomplish today 🥇 ?
+  utter_slots_values:
+  - text: |-
+      Type in your ticket ID:
+       - Agent's Number?: {confirm_exercise}
+       - Kiosk ID: {exercise}
+       - Ticket-ID: {sleep}
+       - Agent's Slot Name: {diet}
+       - Transaction : {stress}
+       - Goal: {goal}
+  utter_no_worries:
+  - text: No problem :)
+  utter_ask_continue:
+  - text: Sorry, I don't quite understand. Do you want to continue?
+  utter_stress_info:
+  - text: It's ok to feel overwhelmed at times. Try to set realistic expectations and exercise time management techniques, like dividing large tasks into more manageable pieces. Relaxation techniques, like deep breathing and meditation, can also be beneficial.
+  utter_exercise_info:
+  - text: You can easly get your game information if you type in the right credentials
+  utter_diet_info:
+  - text: As an agent, You should be able to get all your transaction history Just insert your agents location and your ID
+actions:
+- health_form
+- utter_exercise_info
+- utter_greet
+forms:
+  health_form:
+    required_slots: {}
