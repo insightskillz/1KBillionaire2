@@ -11,9 +11,9 @@ intents:
 - bot_challenge
 - thankyou
 - out_of_scope
-- ask_lower_stress
+- ask_agent
 - ask_eat_healthy
-- ask_exercise
+- ask_pin
 entities:
 - exercise
 - sleep
@@ -41,7 +41,6 @@ responses:
   utter_greet:
   - text: |-
       Hi! Welcome to 1KBillionaire.
-       1KBillionaire is powered by Homewin.
        What would you like to ask?
   utter_goodbye:
   - text: See you tomorrow. Bye!
@@ -82,6 +81,7 @@ actions:
 - health_form
 - utter_exercise_info
 - utter_greet
+
 forms:
   health_form:
     required_slots: {}

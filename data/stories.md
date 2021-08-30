@@ -56,7 +56,7 @@
 * affirm
     - health_form
     - form{"name": "health_form"}
-* ask_exercise
+* ask_pin
     - utter_exercise_info
     - health_form
     - form{"name": null}
@@ -67,9 +67,9 @@
     - utter_diet_info
 
 ## ask stress questions
-* ask_lower_stress
+* ask_agent
     - utter_stress_info
 
 ## ask exercise
-* ask_exercise
+* ask_pin
     - utter_exercise_info

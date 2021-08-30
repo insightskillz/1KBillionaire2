@@ -13,6 +13,7 @@
 - goodbye
 - see you around
 - see you later
+- stick around 
 
 ## intent:affirm
 - yes
@@ -53,6 +54,9 @@
 - sure thanks
 - thanks bye
 - thanks
+- ok thank you 
+- ok good
+- alright
 
 ## intent:bot_challenge
 - are you a bot?
@@ -95,6 +99,11 @@
 - can I open a ticket
 - pls help me open ticket support
 - too many sweets
+- i want to play a game 
+- can i get my game information 
+- How can i check my game transaction
+- how do i get my transaction history
+
 
 
 ## intent:out_of_scope
@@ -127,7 +136,7 @@
 - what is the weather
 - how old are you?
 - add two plus two
-- Hdjejene
+- Hejene
 - title
 - how about the forecast
 - foolish
@@ -143,7 +152,7 @@
 - How much exercise should I do every day?
 - How many times per week should I go to the gym?
 
-## intent:ask_lower_stress
+## intent:ask_agent
 - ticket support open now can you do that for me
 - When is the draws
 - Where can I watch the daily draws
@@ -165,7 +174,7 @@
 - How do i open a support ticket as an agent
 - How can I check my agent status?
 
-## intent:ask_exercise
+## intent:ask_pin
 - What's a good amount of money can i stake
 - Is there any age restriction playing 1KBillionaire
 - What is the minimum requirement to play this game
